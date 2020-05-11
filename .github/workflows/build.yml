@@ -38,9 +38,9 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: sudo npm run package-linux && ls ./release-linux
 
-      - name: Build/release Electron app
-        if: matrix.os == 'ubuntu-latest'
-        run: sudo npm run repackage-linux
+      #- name: Build/release Electron app
+      #  if: matrix.os == 'ubuntu-latest'
+      #  run: sudo npm run repackage-linux
 
       - name: Upload binaries to release linux
         uses: svenstaro/upload-release-action@v1-release
